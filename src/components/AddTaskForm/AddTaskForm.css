@@ -1,0 +1,30 @@
+.task-form {
+    display: flex;
+    max-width: 500px;
+    margin: 0 auto 1em;
+}
+
+.task-form-input {
+    font-size: 1.5em;
+    width: 100%;
+    height: var(--controls-size);
+    text-align: center;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.task-form-btn {
+    width: var(--controls-size);
+    height: var(--controls-size);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 auto;
+    cursor: pointer;
+    color: var(--controls-color);
+}
+
+.task-form-btn span {
+    font-size: 5em;
+    line-height: 0;
+}

@@ -13,9 +13,9 @@ const TaskView: React.FC<TaskProps> = ({task, onDelClick, isDone, onStateChange}
 
   return (
     <div className={className}>
-      <input type="checkbox" checked={isDone} onChange={onStateChange}/>
+      <input className="task-checkbox" type="checkbox" checked={isDone} onChange={onStateChange}/>
       <div className="task-text">{task}</div>
-      <button className="task-del-btn" onClick={onDelClick}>Delete</button>
+      <button className="task-del-btn" onClick={onDelClick}><span>+</span></button>
     </div>
   );
 };

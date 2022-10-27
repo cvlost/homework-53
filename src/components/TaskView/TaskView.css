@@ -1,0 +1,52 @@
+.task {
+    display: flex;
+    border: 1px solid gainsboro;
+    margin-bottom: .5em;
+    padding: 1em;
+    align-items: flex-start;
+    transition: background-color .2s, box-shadow .3s;
+}
+
+.task:hover {
+    box-shadow: 0 0 15px gainsboro;
+}
+
+.task-done {
+    background-color: #bcf5ff;
+}
+
+.task-checkbox {
+    width: var(--controls-size);
+    height: var(--controls-size);
+    margin-right: 1em;
+    cursor: pointer;
+    flex: 0 0 auto;
+}
+
+.task-text {
+    flex: 1 1 auto;
+    align-self: center;
+    transition: color .2s;
+}
+
+.task-checkbox:checked + .task-text {
+    color: gray;
+}
+
+.task-del-btn {
+    width: var(--controls-size);
+    height: var(--controls-size);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-left: 1em;
+    color: var(--controls-color);
+}
+
+.task-del-btn span {
+    font-size: 5em;
+    display: block;
+    line-height: 0;
+    transform: rotate(45deg);
+}

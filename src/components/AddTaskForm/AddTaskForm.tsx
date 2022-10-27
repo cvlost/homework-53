@@ -11,7 +11,7 @@ const AddTaskForm: React.FC<AddTaskProps> = ({onInputChange, inputValue, onBtnCl
   return (
     <div className="task-form">
       <input className="task-form-input" type="text" onChange={onInputChange} value={inputValue}/>
-      <button className="task-form-btn" onClick={onBtnClick}>Add</button>
+      <button className="task-form-btn" onClick={onBtnClick}><span>+</span></button>
     </div>
   );
 };
