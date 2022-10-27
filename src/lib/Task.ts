@@ -1,14 +1,23 @@
-class Task {
-  public id: string;
+type TaskData = {
+  task: string;
+  isDone: boolean;
+};
 
-  constructor(public task: string) {
+class Task {
+  public task: string;
+  public id: string;
+  public isDone: boolean;
+
+  constructor(taskData: TaskData) {
+    this.task = taskData.task;
     this.id = (Task.nextId++).toString();
+    this.isDone = taskData.isDone;
   }
 
   static nextId = 0;
 
-  static createTasks(tasks: string[]) {
-    return tasks.map(task => new Task(task));
+  static createTasks(tasksData: TaskData[]) {
+    return tasksData.map(task => new Task(task));
   }
 }
 
