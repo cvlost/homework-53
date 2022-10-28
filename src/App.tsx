@@ -39,7 +39,7 @@ function App() {
   return (
     <div className="App container">
       <h1 className="App-title">ToDo list</h1>
-      <AddTaskForm onInputChange={updateInput} inputValue={currentTask} onBtnClick={addNewTask}/>
+      <AddTaskForm onInputChange={updateInput} inputValue={currentTask} addTask={addNewTask}/>
       <div className="tasks-container">
         {tasks.map((task, i) => (
           <TaskView

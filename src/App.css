@@ -39,3 +39,32 @@ body {
     overflow: auto;
     box-shadow: 0 0 15px gainsboro;
 }
+
+.tasks-container:empty {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tasks-container:empty::after {
+    content: "ʕ•ᴥ•ʔ";
+    font-size: 5em;
+    color: gray;
+}
+
+button {
+    user-select: none;
+    cursor: pointer;
+}
+
+@media (max-width: 650px) {
+    :root {
+        font-size: .9em;
+    }
+}
+
+@media (max-width: 500px) {
+    :root {
+        font-size: .8em;
+    }
+}

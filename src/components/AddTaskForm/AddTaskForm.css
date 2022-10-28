@@ -11,7 +11,27 @@
     text-align: center;
     padding-left: 1em;
     padding-right: 1em;
-    border: 1px solid var(--border-color);
+    border: 0;
+    outline: 0;
+    box-shadow: 0 0 15px gainsboro,  inset 0 0 2px 2px transparent;
+    transition: box-shadow .3s;
+}
+
+.task-form-input:hover {
+    box-shadow: 0 0 15px 5px gainsboro;
+}
+
+.task-form-input:hover + button {
+    box-shadow: 0 0 15px 5px gainsboro;
+}
+
+.task-form-input:focus {
+    outline: none;
+    box-shadow: 0 0 15px gainsboro, inset 0 0 2px 2px #9edfff;
+}
+
+.task-form-input:focus + button {
+    box-shadow: 0 0 15px gainsboro;
 }
 
 .task-form-btn {
@@ -21,10 +41,10 @@
     justify-content: center;
     align-items: center;
     flex: 0 0 auto;
-    cursor: pointer;
     color: var(--controls-color);
-    transition: background-color .2s, color .2s;
-    border: 1px solid var(--border-color);
+    transition: background-color .2s, color .2s, box-shadow .3s;
+    border: 0;
+    box-shadow: 0 0 15px gainsboro;
     background: white;
     border-left: none;
 }
@@ -35,6 +55,6 @@
 }
 
 .task-form-btn span {
-    font-size: 5em;
+    font-size: 4em;
     line-height: 0;
 }

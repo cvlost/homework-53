@@ -17,7 +17,7 @@
 .task-checkbox {
     width: var(--controls-size);
     height: var(--controls-size);
-    margin-right: 1em;
+    margin: 0 1em 0 0;
     cursor: pointer;
     flex: 0 0 auto;
 }
@@ -38,11 +38,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    cursor: pointer;
     margin-left: 1em;
     color: var(--controls-color);
     transition: background-color .2s, color .2s;
-    border: 1px solid var(--border-color);
+    border: none;
+    box-shadow: 0 0 15px gainsboro;
     background: white;
 }
 
@@ -52,7 +52,7 @@
 }
 
 .task-del-btn span {
-    font-size: 5em;
+    font-size: 4em;
     display: block;
     line-height: 0;
     transform: rotate(45deg);

@@ -9,7 +9,7 @@ class Task {
   public isDone: boolean;
 
   constructor(taskData: TaskData) {
-    this.task = taskData.task;
+    this.task = taskData.task !== '' ? taskData.task : '¯\\_(ツ)_/¯';
     this.id = (Task.nextId++).toString();
     this.isDone = taskData.isDone;
   }
