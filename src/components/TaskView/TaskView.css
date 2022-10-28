@@ -1,6 +1,5 @@
 .task {
     display: flex;
-    border: 1px solid gainsboro;
     margin-bottom: .5em;
     padding: 1em;
     align-items: flex-start;
@@ -42,6 +41,14 @@
     cursor: pointer;
     margin-left: 1em;
     color: var(--controls-color);
+    transition: background-color .2s, color .2s;
+    border: 1px solid var(--border-color);
+    background: white;
+}
+
+.task-del-btn:hover {
+    color: white;
+    background-color: #0075ff;
 }
 
 .task-del-btn span {

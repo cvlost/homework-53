@@ -1,7 +1,7 @@
 .task-form {
     display: flex;
     max-width: 500px;
-    margin: 0 auto 1em;
+    margin: 0 auto 1.5em;
 }
 
 .task-form-input {
@@ -11,6 +11,7 @@
     text-align: center;
     padding-left: 1em;
     padding-right: 1em;
+    border: 1px solid var(--border-color);
 }
 
 .task-form-btn {
@@ -22,6 +23,15 @@
     flex: 0 0 auto;
     cursor: pointer;
     color: var(--controls-color);
+    transition: background-color .2s, color .2s;
+    border: 1px solid var(--border-color);
+    background: white;
+    border-left: none;
+}
+
+.task-form-btn:hover {
+    color: white;
+    background-color: #0075ff;
 }
 
 .task-form-btn span {

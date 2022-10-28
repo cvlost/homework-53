@@ -11,6 +11,7 @@ body {
     -moz-osx-font-smoothing: grayscale;
     --controls-size: 3rem;
     --controls-color: #575757;
+    --border-color: #b9b9b9;
 }
 
 .App {
@@ -22,7 +23,7 @@ body {
 .App-title {
     font-weight: lighter;
     margin: 0;
-    padding: 1em 0;
+    padding: 0.3em 0 0.5em;
 }
 
 .container {
@@ -33,12 +34,8 @@ body {
 }
 
 .tasks-container {
-    padding: 1em .5em;
+    padding: 1em;
     flex: 1 1 auto;
     overflow: auto;
-    transition: background-color .4s;
-}
-
-.tasks-container:empty {
-    background-color: #f1f1f1;
+    box-shadow: 0 0 15px gainsboro;
 }
