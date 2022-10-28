@@ -11,7 +11,6 @@ interface AddTaskProps {
 
 const AddTaskForm: React.FC<AddTaskProps> = ({onInputChange, inputValue, addTask}) => {
   const handleKeyDown = (e: React.KeyboardEvent) => {
-    console.log(e.key)
     if (e.key !== 'Enter') return;
     addTask();
   };
